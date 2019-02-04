@@ -35,8 +35,8 @@ void mergesort(int *arr,int n)
     if(n==1)
         return;
 
-    int *arr1=(int *)malloc(10000*sizeof(int));
-    int *arr2=(int *)malloc(10000*sizeof(int));
+    int *arr1=(int *)malloc(100000*sizeof(int));
+    int *arr2=(int *)malloc(100000*sizeof(int));
 
     for(int i=0;i<n/2;i++)
         arr1[i]=arr[i];
