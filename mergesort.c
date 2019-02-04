@@ -51,9 +51,13 @@ void mergesort(int *arr,int n)
 
 int main()
 {
-    int a[100]={1,3,1,10,4,100,2};
-    mergesort(a,7);
-    for(int i=0;i<7;i++)
+    int *a=(int *)malloc(100000*sizeof(int));
+    int n;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    mergesort(a,n);
+    for(int i=0;i<n;i++)
         printf("%d ",a[i]);
     printf("\n");
     return 0;
