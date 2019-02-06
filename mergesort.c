@@ -47,6 +47,8 @@ void mergesort(int *arr,int n)
     mergesort(arr1,n/2);
     mergesort(arr2,x);
     merge(arr1,n/2,arr2,x,arr);
+    free(arr1);
+    free(arr2);
 }
 
 int main()
